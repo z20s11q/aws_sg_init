@@ -21,10 +21,3 @@
   ]
 }
 
-#PermitRootLogin prohibit-password
-PermitRootLogin yes
-
-PermitRootLogin yes
-PasswordAuthentication yes
-
-sed -i '/#PermitRootLogin prohibit-password/c\PermitRootLogin yes' /etc/ssh/sshd_config && sed -i '/PasswordAuthentication no/c\PasswordAuthentication yes' /etc/ssh/sshd_config
