@@ -38,6 +38,10 @@ else
     exit 1
 fi
 
+systemctl enable v2ray
+
+systemctl start v2ray
+
 # 5. 重启系统
 shutdown -r now
 
