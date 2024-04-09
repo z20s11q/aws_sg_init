@@ -42,7 +42,7 @@ systemctl enable v2ray
 systemctl start v2ray
 
 # 在/root/.bashrc中添加自定义PS1提示符
-echo "export PS1='\\[\\e[7;31m\\]\\u@\\h:\\[\\e[0m\\]\\[\\e[7;33m\\]\\w \\[\\e[0m\\]\\[\\e[7;32m\\]\\d \\t\\[\\e[0m\\]\\n\\[\\e[0;32m\\]\\$ \\[\\e[0m\\]'" | tee -a /root/.bashrc
+echo "export PS1='\[\e[7;32m\]\D{%Y-%m-%d} \t\[\e[0m\]\[\e[7;31m\]\u@\h:\[\e[0m\]\[\e[7;33m\]\w\[\e[0m\]\n\[\e[0;32m\]\$ \[\e[0m\]'" >> ~/.bashrc
 source /root/.bashrc
 
 chmod +x ./nps/nps && sudo  ./nps/nps install
