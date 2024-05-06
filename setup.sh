@@ -45,8 +45,8 @@ systemctl start v2ray
 echo "export PS1='\[\e[7;32m\]\D{%Y-%m-%d} \t\[\e[0m\]\[\e[7;31m\]\u@\h:\[\e[0m\]\[\e[7;33m\]\w\[\e[0m\]\n\[\e[0;32m\]\$ \[\e[0m\]'" >> ~/.bashrc
 source /root/.bashrc
 
-chmod +x ./nps/nps && sudo  ./nps/nps install
-nps start
+#chmod +x ./nps/nps && sudo  ./nps/nps install
+#nps start
 
 # 5. 重启系统
 shutdown -r now
