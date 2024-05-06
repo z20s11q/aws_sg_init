@@ -10,7 +10,9 @@ sed -i '/#PermitRootLogin prohibit-password/c\PermitRootLogin yes' /etc/ssh/sshd
 git clone https://github.com/z20s11q/aws_sg_init.git && cd aws_sg_init && chmod +x setup.sh && sudo ./setup.sh
 
 安装nps:
+
 chmod +x ./nps/nps && sudo  ./nps/nps install
 
 启动nps:
+
 nps start
